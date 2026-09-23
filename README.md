@@ -7,6 +7,11 @@ This repository reproduces the chronological forecasting comparison and runs the
 
 The pipeline makes **no new Qwen calls**. It uses the archived, validated Qwen outputs distributed in `data/raw/tcmb_qwen_features_v1.zip`.
 
+The post-hoc scaling and regularisation analysis is available in
+`scripts/regularization_sensitivity.py`. It writes the complete 18-row grid to
+`outputs/regularization_sensitivity.csv` and does not require transformer
+embeddings or new language-model calls.
+
 ## Scientific status
 
 The additional experiments use the same 37 forecast origins that were already inspected during manuscript development. They are therefore a **post-hoc robustness extension**, not a new independent confirmatory test. The pipeline records this status in every publication run.
