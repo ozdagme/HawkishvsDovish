@@ -1,0 +1,59 @@
+{
+  "protocol_version": "tcmb_financial_nlp_extension_20260923",
+  "status": "post-hoc extension on previously observed evaluation dates; not a new independent test",
+  "evaluation_origin_start": "2023-01-01",
+  "classes": ["cut", "hold", "hike"],
+  "regularization_lambda": 0.1,
+  "optimizer": {
+    "method": "L-BFGS-B",
+    "maxiter": 2000,
+    "ftol": 1e-12,
+    "gtol": 1e-8
+  },
+  "tfidf": {
+    "min_df": 2,
+    "max_features": 2000,
+    "sublinear_tf": true,
+    "row_l2_normalize": true
+  },
+  "lsa": {
+    "components": 8,
+    "rank_threshold": 1e-10
+  },
+  "embedding": {
+    "backend": "transformer",
+    "model_name": "dbmdz/bert-base-turkish-cased",
+    "revision": "main",
+    "max_length": 512,
+    "chunk_overlap": 64,
+    "batch_size": 8,
+    "device": "auto",
+    "document_pooling": "mean_of_chunk_means",
+    "l2_normalize": true
+  },
+  "bootstrap": {
+    "replicates": 10000,
+    "block_length": 4,
+    "seed": 20260923
+  },
+  "publication_arms": [
+    "history",
+    "history_tfidf",
+    "history_lsa",
+    "history_transformer",
+    "history_qwen_all",
+    "history_qwen_inflation",
+    "history_qwen_demand",
+    "history_qwen_forward",
+    "history_qwen_scores_only",
+    "history_qwen_missing_only"
+  ],
+  "primary_new_comparison": "history_transformer minus history",
+  "qwen_ablation_reference": "history_qwen_all",
+  "notes": [
+    "The transformer is frozen; no outcome labels are used to update it.",
+    "Embedding scaling and every predictive model are fitted separately inside each chronological fold.",
+    "Qwen outputs are archived features; this pipeline makes no new LLM calls.",
+    "Hash embeddings are permitted only for smoke tests and must not be reported as publication results."
+  ]
+}
