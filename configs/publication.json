@@ -23,7 +23,8 @@
   "embedding": {
     "backend": "transformer",
     "model_name": "dbmdz/bert-base-turkish-cased",
-    "revision": "main",
+    "revision": "b6e1de16c983e0f2c70664591ea3f22810072608",
+    "expected_matrix_sha256": "c049e082d76bd96b772064d681be2f9727dd99221f8c1dd11803e3531375fa22",
     "max_length": 512,
     "chunk_overlap": 64,
     "batch_size": 8,

@@ -1,0 +1,29 @@
+{
+  "files": {
+    "configs/publication.json": "bba92fa8ac4dff8a1b5c187a7dbc73bfb3f37917d856aa35843c03a413b8f1d1",
+    "data/derived/bert_embeddings.npz": "28c56d0f777970012e39ee9f95afea62e1b8e63f0f46db32b56fbfd679381525",
+    "outputs/bert_embedding_validation.json": "a2eaf109bb3f20de5ff5b6a3bd8c3a4b6154abaf2078f44dac7a2b308c8eab68",
+    "outputs/finance_expert_labels.csv": "f3a940c0ece9e58ae2748bcf0d851c02aced6e22a79faa51d0a8c5a4a702a3b4",
+    "outputs/nested_tuning_choices.csv": "1ca2ec56a0e4b2689174d2feb14b2c74780e62489651957ba18e5873578a916f",
+    "outputs/nested_tuning_contrasts.csv": "bc48fa906426fe6a4f5be50931fc82f3669ff9a1ec4d41e939ec2ce7231340a1",
+    "outputs/nested_tuning_inner_scores.csv": "e26375736e6dc72d89729d62bb0135c43e4b90721ce476af0fd00d85a778f083",
+    "outputs/nested_tuning_metadata.json": "2912928dac7ebaa74ec2046eb33ab274eb510c2847e6385e786096258b166046",
+    "outputs/nested_tuning_metrics.csv": "41ad9ba3cf15f7b43a90ecc923265d8e2949d8b73f3a114aefb189c0bf9c8130",
+    "outputs/nested_tuning_predictions.csv": "65d7b7c3545fe678d607c2443948063af2621405faec0b8342d8d77f9f866ed0",
+    "outputs/public_audit_metadata.json": "e5e5cbbdbd7c09b5f118f56f68549f258d343fef4aed97c77520c239f2894cd3",
+    "outputs/qwen_features_public.csv": "47e5385b126d6d5bf14a07ad20f8cba05b9b64cd90683c44124d925763e94956",
+    "outputs/tcmb_statement_source_index.csv": "c6cf4d0d40dfa3e78ce1cf681ef14217f3f09fc114022f75df41411992bc2ca5",
+    "scripts/export_public_audit_data.py": "cf525110f900a14bc0b55b8be47fc147c7d230a83b6297c4a4206ec16cc48462",
+    "scripts/nested_tuning_analysis.py": "1ebcc8ef5fabc08a331b4b2be5283fa31dd91b34ef3052379d988b97f9a688cb",
+    "scripts/verify_bert_embeddings.py": "7d95cd2b4ba3be02f522d3fbb163f97c7e106dd54719ce4fe6d4efa9630550d8",
+    "src/tcmb_repro/pipeline.py": "26ace8f0db8ff19a40d0e6986a1b7c977e6e90324c9f154fab9d6aaf91ff4acb"
+  },
+  "bert_validation": {
+    "encoder_commit": "b6e1de16c983e0f2c70664591ea3f22810072608",
+    "matrix_sha256": "c049e082d76bd96b772064d681be2f9727dd99221f8c1dd11803e3531375fa22",
+    "shape": [122, 768],
+    "status": "exact_match"
+  },
+  "release": "v1.0.3",
+  "status": "prepared_not_yet_published"
+}

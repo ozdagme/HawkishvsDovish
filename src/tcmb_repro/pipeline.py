@@ -1065,6 +1065,12 @@ def build_embeddings(
         raise ValueError(f"Unknown embedding backend: {selected_backend}")
     metadata["created_utc"] = datetime.now(timezone.utc).isoformat()
     metadata["matrix_sha256"] = sha256_bytes(matrix.tobytes())
+    expected_matrix_sha256 = config.get("embedding", {}).get("expected_matrix_sha256")
+    if selected_backend == "transformer" and expected_matrix_sha256:
+        metadata["expected_matrix_sha256"] = expected_matrix_sha256
+        metadata["matches_expected_matrix_sha256"] = (
+            metadata["matrix_sha256"] == expected_matrix_sha256
+        )
     save_embeddings(
         output_path,
         [row["origin_id"] for row in dataset.features],
