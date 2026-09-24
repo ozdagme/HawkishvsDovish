@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "HawkishvsDovish: Reproducibility Package for Chronological Interest-Rate Forecasting"
+version: 1.0.4
+type: software
+message: "If you use this software, please cite the archived Zenodo release."
+authors:
+  - family-names: "OZDAG"
+    given-names: "Muhammet Esat"
+    orcid: "https://orcid.org/0000-0003-0620-4365"
+    affiliation: "Tokat Gaziosmanpasa University"
+  - family-names: "BASTURK"
+    given-names: "Alper"
+    orcid: "https://orcid.org/0000-0001-5810-0643"
+    affiliation: "Erciyes University"
+abstract: "Code, configurations, audit outputs, and reproducibility materials for the chronological evaluation of financial NLP representations in next-meeting interest-rate forecasting from Turkish central-bank statements."
+keywords:
+  - central bank communication
+  - financial natural language processing
+  - interest rate forecasting
+  - chronological evaluation
+  - reproducibility
+repository-code: "https://github.com/ozdagme/HawkishvsDovish"
+date-released: 2026-09-24
