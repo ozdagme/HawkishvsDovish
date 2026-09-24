@@ -1,0 +1,27 @@
+{
+  "benchmark": "history",
+  "best_candidate": "proxy_market_lsa",
+  "best_mean_loss_advantage": 0.10810810810810811,
+  "block_length": 4,
+  "bootstrap_replicates": 10000,
+  "candidate_family": [
+    "history_tfidf",
+    "history_lsa",
+    "history_qwen_all",
+    "history_qwen_inflation",
+    "history_qwen_demand",
+    "history_qwen_forward",
+    "history_qwen_scores_only",
+    "history_qwen_missing_only",
+    "proxy_market",
+    "proxy_market_lsa",
+    "history_transformer"
+  ],
+  "family_size": 11,
+  "loss": "origin-level 0-1 direction loss",
+  "method": "White Reality Check with centered loss differentials",
+  "n_origins": 37,
+  "observed_statistic": 0.6575959492214292,
+  "p_value": 0.24827517248275172,
+  "seed": 20260923
+}

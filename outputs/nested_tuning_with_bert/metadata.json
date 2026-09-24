@@ -146,16 +146,52 @@
     "torch": "2.11.0+cu128",
     "transformers_model_type": "bert"
   },
-  "embedding_path": "/home/eozda/HawkishvsDovish/reproducibility_repo/data/derived/bert_embeddings.npz",
+  "embedding_path": "data/derived/bert_embeddings.npz",
   "lambdas": [
+    0.001,
     0.01,
     0.1,
-    1.0
+    1.0,
+    10.0
   ],
   "magnitude_selection": "minimum inner MAE; stronger lambda and row-only scaling as deterministic tie-breakers",
   "minimum_inner_origins": 20,
+  "multiplicity": {
+    "directional_comparisons_inspected_in_manuscript": 41,
+    "holm_method": "Holm step-down family-wise error control",
+    "nested_common_benchmark_reality_check_family_size": 11,
+    "nested_exact_mcnemar_family_size": 12,
+    "white_reality_check": {
+      "benchmark": "history",
+      "best_candidate": "proxy_market_lsa",
+      "best_mean_loss_advantage": 0.10810810810810811,
+      "block_length": 4,
+      "bootstrap_replicates": 10000,
+      "candidate_family": [
+        "history_tfidf",
+        "history_lsa",
+        "history_qwen_all",
+        "history_qwen_inflation",
+        "history_qwen_demand",
+        "history_qwen_forward",
+        "history_qwen_scores_only",
+        "history_qwen_missing_only",
+        "proxy_market",
+        "proxy_market_lsa",
+        "history_transformer"
+      ],
+      "family_size": 11,
+      "loss": "origin-level 0-1 direction loss",
+      "method": "White Reality Check with centered loss differentials",
+      "n_origins": 37,
+      "observed_statistic": 0.6575959492214292,
+      "p_value": 0.24827517248275172,
+      "seed": 20260923
+    }
+  },
   "outer_indices_match_publication_folds": true,
   "outer_origins": 37,
+  "probability_selection": "minimum inner multiclass Brier; lower log loss, stronger lambda, and row-only scaling as deterministic tie-breakers",
   "status": "post-hoc nested rolling-origin analysis",
   "text_scalings": [
     "row_only",

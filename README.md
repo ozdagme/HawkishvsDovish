@@ -7,16 +7,44 @@ This repository reproduces the chronological forecasting comparison and runs the
 
 The pipeline makes **no new Qwen calls**. It uses the archived, validated Qwen outputs distributed in `data/raw/tcmb_qwen_features_v1.zip`.
 
+`CITATION.cff` supplies the author, title, version, and repository metadata
+used by GitHub and Zenodo when the release is archived.
+
 The post-hoc scaling and regularisation analysis is available in
-`scripts/regularization_sensitivity.py`. It writes the complete 18-row grid to
+`scripts/regularization_sensitivity.py`. It writes the complete 30-row grid
+for lambda values 0.001, 0.01, 0.1, 1 and 10 to
 `outputs/regularization_sensitivity.csv` and does not require transformer
 embeddings or new language-model calls.
+
+The post-hoc nested analysis is available in
+`scripts/nested_tuning_analysis.py`. It selects direction, magnitude, and
+probability settings separately from earlier rolling-origin predictions
+inside each outer training window. The probability variant minimises inner
+multiclass Brier score and uses log loss as a tie-breaker. Outputs are stored
+under `outputs/nested_tuning_*`. When the
+validated `data/derived/bert_embeddings.npz` cache is present, the script also
+includes the frozen BERT arm and tunes its penalty from prior inner origins.
+The distributed cache is an exact match to the archived matrix SHA-256, and
+the BERT-inclusive results are preserved under
+`outputs/nested_tuning_with_bert/` and the canonical flat output files.
+Selection frequencies are in `outputs/nested_selection_stability.csv`; the
+Brier-selected comparison is in
+`outputs/nested_probability_selection_comparison.csv`. The full metrics and
+paired intervals include all six Qwen compositions. Holm-adjusted direction
+tests and the White Reality Check are also archived.
+
+`scripts/export_public_audit_data.py` creates a dated TCMB source index,
+de-identified finance-expert labels, and validated Qwen feature outputs. The
+generated tables are included under `outputs/`.
 
 ## Scientific status
 
 The additional experiments use the same 37 forecast origins that were already inspected during manuscript development. They are therefore a **post-hoc robustness extension**, not a new independent confirmatory test. The pipeline records this status in every publication run.
 
-The repository deliberately retains one finance-expert reference set. It does not claim inter-rater reliability or expert consensus.
+The repository deliberately retains one finance-expert reference set. The
+external annotator was a finance researcher working in economics and was
+blinded to model identities, model outputs, and forecasting results. The study
+does not claim inter-rater reliability or expert consensus.
 
 ## Repository layout
 
@@ -95,6 +123,22 @@ This command uses deterministic 64-dimensional hash vectors to test every fold, 
 ```bash
 python run.py all
 ```
+
+The encoder revision is pinned to the exact commit used in the archived
+publication run. After embedding extraction, validate the cache before using
+it in the nested analysis:
+
+```bash
+python scripts/verify_bert_embeddings.py
+python scripts/nested_tuning_analysis.py \
+  --embeddings data/derived/bert_embeddings.npz \
+  --output-dir outputs/nested_tuning_with_bert
+```
+
+The included cache has an exact matrix-hash match to the original archived
+run. If the cache is regenerated on another device and the hash differs,
+retain the validation report and do not replace the publication result until
+the resulting metrics and metadata have been reviewed.
 
 This command:
 

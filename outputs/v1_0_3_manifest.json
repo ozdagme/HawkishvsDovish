@@ -25,5 +25,7 @@
     "status": "exact_match"
   },
   "release": "v1.0.3",
-  "status": "prepared_not_yet_published"
+  "commit": "6b70ce8ffd506f6600cd87976a8bb06e6f46316d",
+  "published_date": "2026-09-24",
+  "status": "published"
 }

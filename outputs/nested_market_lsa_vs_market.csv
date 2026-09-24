@@ -1,0 +1,2 @@
+reference,candidate,reference_correct,candidate_correct,macro_f1_difference,macro_f1_ci_low,macro_f1_ci_high,mae_bp_difference,mae_bp_ci_low,mae_bp_ci_high,mcnemar_b,mcnemar_c,mcnemar_exact_p
+proxy_market,proxy_market_lsa,25,29,0.11053082051534069,0.024238756643804253,0.28856122865302786,-0.35776248609877825,-9.90322782900151,7.47419757925412,0,4,0.125

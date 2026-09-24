@@ -49,7 +49,7 @@ def main() -> int:
     output_rows: list[dict[str, object]] = []
 
     for scaling in ("row_only", "column_standardized"):
-        for regularization in (0.01, 0.1, 1.0):
+        for regularization in (0.001, 0.01, 0.1, 1.0, 10.0):
             run_config = copy.deepcopy(config)
             run_config["regularization_lambda"] = regularization
             predictions: dict[str, list[dict[str, object]]] = {

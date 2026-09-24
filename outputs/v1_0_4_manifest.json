@@ -1,0 +1,33 @@
+{
+  "created_utc_date": "2026-09-24",
+  "release": "v1.0.4",
+  "purpose": "Add wider regularisation, selection-stability, Brier-selection, complete Qwen nested results, and multiplicity audits.",
+  "scientific_status": "Post-hoc robustness analyses on the reused 37-origin evaluation period.",
+  "results": {
+    "lambda_grid": [0.001, 0.01, 0.1, 1.0, 10.0],
+    "sensitivity_rows": 30,
+    "directional_text_specification_contrasts_reported": 41,
+    "nested_mcnemar_family_size": 12,
+    "smallest_raw_mcnemar_p": 0.125,
+    "smallest_holm_adjusted_p": 1.0,
+    "white_reality_check_family_size": 11,
+    "white_reality_check_p": 0.24827517248275172,
+    "bert_macro_selected_brier": 0.740592,
+    "bert_brier_selected_brier": 0.573084
+  },
+  "files": {
+    "scripts/nested_tuning_analysis.py": "ad474d04e2e61ee5e54212c470999cd8818fb7750d72cbce19caa03b7cd1caf1",
+    "scripts/regularization_sensitivity.py": "e4f903a72b68f46da2b8dd6e97569e379b08cd28a8f5bf3f94615daf64ed8b89",
+    "outputs/regularization_sensitivity.csv": "836f76c38f4bd025857a80e2a54d554060c2a80eaee3cd98753e968897cff0be",
+    "outputs/nested_selection_stability.csv": "fbf737a146a8e0ef773be8a7d91fa2130de65187c3c53f0fe97a901e3463cbc5",
+    "outputs/nested_probability_selection_comparison.csv": "27d8f22ffdf995282be43a2e2c775fda66f453f26a4455ee5e538b7e390f1d1a",
+    "outputs/nested_tuning_metrics.csv": "3790c39a43548231949353a56e0318b2e2d477828b3d67c94c5324cf773ffcbf",
+    "outputs/nested_tuning_contrasts.csv": "46e9093f8c2dd8f01feff23273311b3b09691b3771b31459c90900c76f8d83c2",
+    "outputs/nested_direction_multiplicity.csv": "e1eacb28f19aaed04f9bfc60a5dbb4f3dcecbd5b5dc2b433c693f71d2b8b1d9b",
+    "outputs/nested_white_reality_check.json": "cfdfe008fc31534293ca40957b92fd35c550ac6cf79b39506551d5d42b7f5714",
+    "outputs/nested_tuning_metadata.json": "bee93af648ba2002a376f1b737d9cd4c203c9587bf30a2a01d119fbe5980b463",
+    "CITATION.cff": "32db3e67c2597e025fc1a67c4d5d00799c4d2587de7676a1a4c4bfeadb2f8e6b",
+    "README.md": "ebef2e442d448eb3c89ec93142df27525c6cee348430c655b6639a7fcf806cc8",
+    "VALIDATION_REPORT.md": "e7d3226a1e2796fbfde84ea669281e5eb148dd56a846f32fecb71e3e822fe3bf"
+  }
+}
