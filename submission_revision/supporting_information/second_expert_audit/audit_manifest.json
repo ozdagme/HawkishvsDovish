@@ -1,0 +1,14 @@
+{
+  "status": "pre-adjudication second-reference audit; original labels unchanged",
+  "date": "2026-09-30",
+  "scope": "same 24 test documents; demand excludes one originally uncertain label",
+  "document_disagreements": 19,
+  "axis_disagreements_including_uncertain": 32,
+  "source_csv_sha256": "606262ac688a77bf51f5329cc97dc7d7ad92549ad05723df99ed23fc045606c7",
+  "public_files_sha256": {
+    "agreement_report.json": "131fc6f17b37c9e3e574607bd5dbb59ed16510e8e1e0672d7e04074c836db6e7",
+    "confusion_matrices.csv": "e1b3ba72e29b354c0afe29e1d8b81ebcf14211bb07a349afd4837581489178ce",
+    "inter_annotator_agreement.csv": "91a26e0a45f8f5c5053b62132a7e103a6142f884e2409df95d5f0038f68fd134",
+    "second_expert_labels_test.csv": "8930638e89db99afb4b1f27f08f5c914c55b1486d8208fd5f0da1e8a1916b452"
+  }
+}

@@ -1,0 +1,7 @@
+analysis,comparison,estimate,ci_low,ci_high,discordant_gain,discordant_loss,p_value
+conditional_block_mae,market_minus_history,-15.4245,-41.2349,9.5721,,,
+conditional_block_mae,market_lsa_minus_history,-16.5150,-40.2471,6.1559,,,
+exact_mcnemar,tfidf_minus_history,,,,1,0,1.0000
+exact_mcnemar,lsa_minus_history,,,,1,1,1.0000
+exact_mcnemar,bert_minus_history,,,,3,2,1.0000
+exact_mcnemar,qwen_all_minus_history,,,,2,2,1.0000

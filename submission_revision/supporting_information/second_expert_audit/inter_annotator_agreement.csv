@@ -1,0 +1,4 @@
+﻿axis,documents,uncertain_first,uncertain_second,agree_n,disagree_n,first_minus_one,first_zero,first_plus_one,second_minus_one,second_zero,second_plus_one,paired_n,agreement,cohen_kappa,linear_weighted_kappa
+inflation_pressure,24,0,0,12,12,2,14,8,8,13,3,24,0.49999999999999994,0.18644067796610164,0.26415094339622636
+demand_pressure,24,1,0,17,6,13,7,3,18,2,3,23,0.7391304347826086,0.49264705882352944,0.558904109589041
+forward_policy_bias,24,0,0,11,13,0,10,14,0,23,1,24,0.45833333333333337,0.06024096385542185,0.06024096385542166

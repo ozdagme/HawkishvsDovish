@@ -1,0 +1,67 @@
+{
+  "date": "2026-09-30",
+  "status": "frozen responses rescored; no inference, refitting or adjudication",
+  "run_identity": "16200c5cb5be2c89717b666ca494e83f2d767bf0543f86d428f2669d45b64707",
+  "llm_records": 672,
+  "first_objects_valid": 672,
+  "strict_json": {
+    "base_valid": 0,
+    "base_n": 168,
+    "fine_tuned_valid": 504,
+    "fine_tuned_n": 504
+  },
+  "reproduction": "Original strict report, 11 published first-object F1 values and four paired intervals match",
+  "parser": "Decode first object starting at first opening brace; reject duplicate keys, noninteger values or altered axes; no repair",
+  "reference_axis_n": {
+    "original_full": [
+      24,
+      23,
+      24
+    ],
+    "second_full": [
+      24,
+      24,
+      24
+    ],
+    "original_common": [
+      24,
+      23,
+      24
+    ],
+    "second_common": [
+      24,
+      23,
+      24
+    ]
+  },
+  "class_order": [
+    -1,
+    0,
+    1
+  ],
+  "axis_order": [
+    "inflation_pressure",
+    "demand_pressure",
+    "forward_policy_bias"
+  ],
+  "bootstrap": {
+    "seed": 20260916,
+    "draws": 2000,
+    "circular_block_length": 3,
+    "unit": "document; same indices for all references/models; average seed metrics, not labels"
+  },
+  "limitations": "Same reused 24 documents; new annotations, not new outcomes. Conditional exploratory intervals, not independent confirmation or reference adjudication.",
+  "script_sha256": "bbe79452be2e9ad6dafa71c2de3e00efcba7dfc97ef0479bad275af3c1e0020c",
+  "input_sha256": {
+    "prism-uploads/SEMANTIK_KAYITLI_TAHMINLER.zip": "36bd2b91f04890adeec24c90f0918b5952a39e16cb42314ba3220f876d673041",
+    "/codex_workspace/ffe43594-f0b0-42fe-8252-f44174edf52b/Expert_Systems/supporting_information/finance_expert_labels.csv": "f3a940c0ece9e58ae2748bcf0d851c02aced6e22a79faa51d0a8c5a4a702a3b4",
+    "/codex_workspace/ffe43594-f0b0-42fe-8252-f44174edf52b/Expert_Systems/supporting_information/second_expert_audit/second_expert_labels_test.csv": "c250efd012eea54ec3b95360bafbe907d98ae6a53b90de12b2313b913ee4e110"
+  },
+  "output_sha256": {
+    "axis_metrics.csv": "b3cd9efce473c898f35ebd542530a72aef8b12361ba571171d2bbd060afaec10",
+    "bootstrap_indices.csv": "ac4296c4a4f327d90038a1a9f4038954acca0ac4420300ac7ba4759853c2b897",
+    "model_metrics.csv": "2c66da5d1db7ff140748f23ce8da325c8a31901c38f1204267d554b8299c7e48",
+    "paired_contrasts.csv": "52e255c9ed48b58ad4dd9109cadb2c972d0287ce38f46eae0d98b35055cf40da",
+    "parsed_responses.csv": "7163a812ab7c6ec8e9cf8f211579588bb679bd2bbc766570c0988c00916bef67"
+  }
+}

@@ -1,0 +1,13 @@
+reference,candidate,mcnemar_b,mcnemar_c,raw_p,holm_adjusted_p,holm_reject_0_05
+history,history_tfidf,5,3,0.7265625,1.0,False
+history,history_lsa,3,3,1.0,1.0,False
+history,history_qwen_all,3,0,0.25,1.0,False
+history,history_qwen_inflation,1,1,1.0,1.0,False
+history,history_qwen_demand,2,1,1.0,1.0,False
+history,history_qwen_forward,3,1,0.625,1.0,False
+history,history_qwen_scores_only,2,1,1.0,1.0,False
+history,history_qwen_missing_only,0,0,1.0,1.0,False
+history,proxy_market,3,3,1.0,1.0,False
+history,proxy_market_lsa,1,5,0.21875,1.0,False
+history,history_transformer,8,4,0.3876953125,1.0,False
+proxy_market,proxy_market_lsa,0,4,0.125,1.0,False

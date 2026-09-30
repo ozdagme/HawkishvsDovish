@@ -1,0 +1,141 @@
+{
+  "status": "submitted second-expert labels compared before adjudication; no model refitting",
+  "input_integrity": {
+    "private_key": {
+      "status": "csv_serialization_equivalent",
+      "actual_sha256": "9212409bdef48420bd4cd6e98e291b1c883a9cad47498003ce7712a1b5153ce0",
+      "expected_sha256": "f0378b552fca28e595770f17aaa72366584fcb3cc2100961a5d9e6bbb70f803a",
+      "matching_newline": "'\\r\\n'",
+      "matching_bom": true,
+      "matching_final_newline": true
+    },
+    "first_expert_labels": {
+      "status": "byte_exact",
+      "actual_sha256": "f3a940c0ece9e58ae2748bcf0d851c02aced6e22a79faa51d0a8c5a4a702a3b4",
+      "expected_sha256": "f3a940c0ece9e58ae2748bcf0d851c02aced6e22a79faa51d0a8c5a4a702a3b4"
+    }
+  },
+  "class_order": [
+    -1,
+    0,
+    1
+  ],
+  "weighted_kappa": "linear ordinal distance; secondary",
+  "uncertainty_rule": "exclude U only on affected axis; count separately",
+  "coverage": [
+    "test"
+  ],
+  "limitations": "No confidence intervals or full-cohort reliability claim; evaluation of models against the new reference is a separate pending step.",
+  "input_sha256": {
+    "Expert_Systems/second_expert_private/key.csv": "9212409bdef48420bd4cd6e98e291b1c883a9cad47498003ce7712a1b5153ce0",
+    "Expert_Systems/second_expert_private/ikinci_uzman_etiketleri.csv": "606262ac688a77bf51f5329cc97dc7d7ad92549ad05723df99ed23fc045606c7",
+    "/codex_workspace/ffe43594-f0b0-42fe-8252-f44174edf52b/Expert_Systems/supporting_information/finance_expert_labels.csv": "f3a940c0ece9e58ae2748bcf0d851c02aced6e22a79faa51d0a8c5a4a702a3b4"
+  },
+  "axes": [
+    {
+      "axis": "inflation_pressure",
+      "documents": 24,
+      "uncertain_first": 0,
+      "uncertain_second": 0,
+      "agree_n": 12,
+      "disagree_n": 12,
+      "first_minus_one": 2,
+      "first_zero": 14,
+      "first_plus_one": 8,
+      "second_minus_one": 8,
+      "second_zero": 13,
+      "second_plus_one": 3,
+      "paired_n": 24,
+      "agreement": 0.49999999999999994,
+      "cohen_kappa": 0.18644067796610164,
+      "linear_weighted_kappa": 0.26415094339622636,
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          5,
+          8,
+          1
+        ],
+        [
+          1,
+          5,
+          2
+        ]
+      ]
+    },
+    {
+      "axis": "demand_pressure",
+      "documents": 24,
+      "uncertain_first": 1,
+      "uncertain_second": 0,
+      "agree_n": 17,
+      "disagree_n": 6,
+      "first_minus_one": 13,
+      "first_zero": 7,
+      "first_plus_one": 3,
+      "second_minus_one": 18,
+      "second_zero": 2,
+      "second_plus_one": 3,
+      "paired_n": 23,
+      "agreement": 0.7391304347826086,
+      "cohen_kappa": 0.49264705882352944,
+      "linear_weighted_kappa": 0.558904109589041,
+      "confusion_matrix": [
+        [
+          13,
+          0,
+          0
+        ],
+        [
+          4,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "axis": "forward_policy_bias",
+      "documents": 24,
+      "uncertain_first": 0,
+      "uncertain_second": 0,
+      "agree_n": 11,
+      "disagree_n": 13,
+      "first_minus_one": 0,
+      "first_zero": 10,
+      "first_plus_one": 14,
+      "second_minus_one": 0,
+      "second_zero": 23,
+      "second_plus_one": 1,
+      "paired_n": 24,
+      "agreement": 0.45833333333333337,
+      "cohen_kappa": 0.06024096385542185,
+      "linear_weighted_kappa": 0.06024096385542166,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          13,
+          1
+        ]
+      ]
+    }
+  ]
+}

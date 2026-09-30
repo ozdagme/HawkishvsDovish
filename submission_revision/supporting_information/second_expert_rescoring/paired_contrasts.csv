@@ -1,0 +1,17 @@
+﻿reference,contrast,estimate,interval95_low,interval95_high,status
+original_full,qwen_ft_effect,0.1264993927232107,0.0005466286961585315,0.206293005005272,exploratory reference sensitivity; stored-response conditional
+original_full,mistral_ft_effect,0.07093978848258875,-0.06281319288001874,0.16725865676683588,exploratory reference sensitivity; stored-response conditional
+original_full,qwen_ft_rag_effect,-0.11349414417084003,-0.20190556791251635,0.020087777924968707,exploratory reference sensitivity; stored-response conditional
+original_full,mistral_ft_rag_effect,-0.056541818010089784,-0.14005866771554598,0.017762210779253915,exploratory reference sensitivity; stored-response conditional
+second_full,qwen_ft_effect,0.06485345518249869,-0.0586463979562936,0.15570766371484815,exploratory reference sensitivity; stored-response conditional
+second_full,mistral_ft_effect,0.12086780055171734,0.021647644489394255,0.21009838150212057,exploratory reference sensitivity; stored-response conditional
+second_full,qwen_ft_rag_effect,-0.17160754507499013,-0.2782008283317842,-0.0613900297659669,exploratory reference sensitivity; stored-response conditional
+second_full,mistral_ft_rag_effect,-0.03273118744994452,-0.10651436849378132,0.052063207263171096,exploratory reference sensitivity; stored-response conditional
+original_common,qwen_ft_effect,0.1264993927232107,0.0005466286961585315,0.206293005005272,exploratory reference sensitivity; stored-response conditional
+original_common,mistral_ft_effect,0.07093978848258875,-0.06281319288001874,0.16725865676683588,exploratory reference sensitivity; stored-response conditional
+original_common,qwen_ft_rag_effect,-0.11349414417084003,-0.20190556791251635,0.020087777924968707,exploratory reference sensitivity; stored-response conditional
+original_common,mistral_ft_rag_effect,-0.056541818010089784,-0.14005866771554598,0.017762210779253915,exploratory reference sensitivity; stored-response conditional
+second_common,qwen_ft_effect,0.07281403459235342,-0.03733881137222667,0.1570928555050418,exploratory reference sensitivity; stored-response conditional
+second_common,mistral_ft_effect,0.133317208363444,0.030846140591836914,0.21933945822163037,exploratory reference sensitivity; stored-response conditional
+second_common,qwen_ft_rag_effect,-0.16766336258008296,-0.2781471961435354,-0.05040116015192852,exploratory reference sensitivity; stored-response conditional
+second_common,mistral_ft_rag_effect,-0.04059419937092751,-0.10976156762182128,0.04318129860656296,exploratory reference sensitivity; stored-response conditional

@@ -1,0 +1,49 @@
+{
+  "analysis_status": "post-hoc descriptive audit; no refitting or new confirmation",
+  "script_sha256": "aa1befcc2e8b0eeada3e35c9e9d4b9eeba2d9dea9c6b4de69981315977526e75",
+  "numpy_version": "2.4.1",
+  "period_assignment": "target publication date; retrospective calendar partitions, not model inputs",
+  "period_definitions": [
+    [
+      "before_2023_06_22",
+      "0001-01-01",
+      "2023-06-21"
+    ],
+    [
+      "2023_06_22_to_2024_03_21",
+      "2023-06-22",
+      "2024-03-21"
+    ],
+    [
+      "2024_03_22_to_2024_12_25",
+      "2024-03-22",
+      "2024-12-25"
+    ],
+    [
+      "2024_12_26_onward",
+      "2024-12-26",
+      "9999-12-31"
+    ]
+  ],
+  "class_order": [
+    "cut",
+    "hold",
+    "hike"
+  ],
+  "leave_one_out": "omit one paired evaluation origin; keep fitted models and forecasts fixed",
+  "input_sha256": {
+    "prism-uploads/tcmb_next_meeting_prepare_v1.zip": "d520ccfe09e40c7a6192d6aa51b6ceacb28afd3fddcf6a8e5d3af1ddd05e1f38",
+    "prism-uploads/publication_run_results.zip": "3152fd27dc50e92d4b2b764bf62c8a613c3fe6818256495d04193e8e954abb8f",
+    "/codex_workspace/ffe43594-f0b0-42fe-8252-f44174edf52b/Expert_Systems/supporting_information/finance_expert_labels.csv": "f3a940c0ece9e58ae2748bcf0d851c02aced6e22a79faa51d0a8c5a4a702a3b4",
+    "/codex_workspace/ffe43594-f0b0-42fe-8252-f44174edf52b/Expert_Systems/supporting_information/nested_tuning_predictions.csv": "ea904ae75b41a088fe5abb31bf0f6fef3a6c5f5aea496a05cbfa9c2784a17ef4",
+    "/codex_workspace/ffe43594-f0b0-42fe-8252-f44174edf52b/Expert_Systems/supporting_information/nested_tuning_metrics.csv": "3790c39a43548231949353a56e0318b2e2d477828b3d67c94c5324cf773ffcbf"
+  },
+  "output_sha256": {
+    "class_support.csv": "98ff913772cfcf651e43eebfcdf2f1053875af15c521f63f255b10731dfb2fa4",
+    "leave_one_out_details.csv": "d159d3fc5c3c6a112958c39204bb97291a60582c022f8536edd354d52091b4ee",
+    "leave_one_out_summary.csv": "4a2bb440c93d853352424be512128aa1c513502d4ac3c780b119ee25db693f24",
+    "market_lsa_changed_origins.csv": "be596ab7bfd6c4cc14c19ff1a88f52f4333de6f5089897e4ca78aaa47e2fc70a",
+    "recomputed_metrics.csv": "5721685fd4b0b12ee32d85a32889ec1a410e29f82413baec324071fa54ccd012",
+    "target_subperiod_metrics.csv": "916e8c861b6addc46846303bf1574a27ef2426e4ad76843f92225533786a101a"
+  }
+}

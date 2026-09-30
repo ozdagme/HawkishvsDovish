@@ -1,0 +1,5 @@
+﻿origin_id,origin_date,target_date,true_class,market_prediction,market_lsa_prediction,market_correct,market_lsa_correct
+decision_close_2023_6,2023-06-22,2023-07-20,hike,hold,hike,False,True
+decision_close_2024_4,2024-04-25,2024-05-23,hold,hike,hold,False,True
+decision_close_2024_12,2024-12-26,2025-01-23,cut,hold,cut,False,True
+decision_close_2025_3,2025-03-20,2025-04-17,hike,hold,hike,False,True

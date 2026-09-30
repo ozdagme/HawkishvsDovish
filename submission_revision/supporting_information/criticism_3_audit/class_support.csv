@@ -1,0 +1,10 @@
+﻿split,axis,documents,minus_one,zero,plus_one,uncertain,evaluated_n
+train,inflation_pressure,80,11,28,41,0,80
+train,demand_pressure,80,14,39,26,1,79
+train,forward_policy_bias,80,3,54,23,0,80
+validation,inflation_pressure,18,1,5,12,0,18
+validation,demand_pressure,18,3,9,6,0,18
+validation,forward_policy_bias,18,1,11,6,0,18
+test,inflation_pressure,24,2,14,8,0,24
+test,demand_pressure,24,13,7,3,1,23
+test,forward_policy_bias,24,0,10,14,0,24
